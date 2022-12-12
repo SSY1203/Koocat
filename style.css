@@ -12,6 +12,9 @@ body {
   margin-left: auto;
 }
 
+/** 헤더 */
+
+/** 메인 헤더 */
 .main-header {
   display: flex;
   align-items: center;
@@ -19,6 +22,7 @@ body {
   padding: 12px 10px;
 }
 
+/** 탑 메뉴 */
 .top-menu-container {
   height: 44px;
 }
@@ -42,4 +46,78 @@ body {
 .top-menu-list .is-active {
   font-weight: 600;
   border-bottom: 2px solid #e26348;
+}
+
+/** 메인 */
+/** 기간 행사 */
+.period-event-container {
+  margin-top: 2px;
+  background-color: yellow;
+  position: relative;
+  height: 278px;
+}
+
+.arrow-buttons {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.left-arrow,
+.right-arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  top: 40%;
+  position: absolute;
+  width: 32px;
+  height: 56px;
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  transform: scaleX(-1);
+  right: 0;
+}
+
+.left-arrow img {
+  background-color: transparent;
+  background-position: 3px 50%;
+  background-size: 24px;
+  line-height: 16px;
+}
+
+.right-arrow img {
+  background-color: transparent;
+  background-position: 3px 50%;
+  background-size: 24px;
+  line-height: 16px;
+}
+
+.period-event-comment {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: white;
+}
+
+.period-event-comment p,
+.period-event-comment strong {
+  background-color: #005cb9;
+  padding-bottom: 5px;
+}
+
+.period-event-comment strong {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.period-event-comment p:last-child {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
 }
