@@ -13,19 +13,28 @@ body {
 }
 
 /** 헤더 */
-
 /** 메인 헤더 */
 .main-header {
-  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 12px 10px;
 }
 
+.main-header,
+.main-header img {
+  background-color: #fff;
+}
+
 /** 탑 메뉴 */
 .top-menu-container {
   height: 44px;
+}
+
+.top-menu-list,
+.top-menu-list li,
+.top-menu-list a {
+  background-color: #fff;
 }
 
 .top-menu-list {
@@ -51,9 +60,13 @@ body {
 
 /** 메인 */
 /** 기간 행사 */
+.period-event-container,
+.period-event-container a {
+  background-color: #fff;
+}
+
 .period-event-container {
   margin-top: 2px;
-  background-color: yellow;
   position: relative;
   height: 278px;
 }
@@ -128,6 +141,12 @@ body {
 }
 
 /** 메인 카테고리 메뉴 */
+.main-category-menu-list,
+.main-category-menu-list a > img,
+.main-category-menu-list a,
+.main-category-menu-list span {
+  background-color: #fff;
+}
 .main-category-menu-list {
   margin-top: 5px;
   display: flex;
