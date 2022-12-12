@@ -1,0 +1,23 @@
+@import url(./reset.css);
+
+* {
+  background-color: #f9f9f9;
+}
+
+body {
+  width: 500px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 10px;
+}
+
+/* .top-menu-list {
+  display: flex;
+} */
