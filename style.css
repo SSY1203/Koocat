@@ -1,13 +1,16 @@
 @import url(./reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
-* {
+
+body {
+  /* background-color: yellowgreen; */
   background-color: #f9f9f9;
 }
 
-body {
+.all-container {
+  background-color: #fff;
   font-family: "Noto Sans KR", sans-serif;
   width: 500px;
-  height: 100%;
+  height: 1000vh;
   margin-right: auto;
   margin-left: auto;
 }
@@ -19,8 +22,14 @@ header {
   z-index: 999;
 }
 
-/** 헤더 */
-/** 메인 헤더 */
+.menu-title {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 0 0 0;
+}
+
+/* 헤더 */
+/* 메인 헤더 */
 .main-header {
   display: flex;
   align-items: center;
@@ -33,7 +42,7 @@ header {
   background-color: #fff;
 }
 
-/** 탑 메뉴 */
+/* 탑 메뉴 */
 .top-menu-container {
   height: 44px;
 }
@@ -67,8 +76,8 @@ header {
   border-bottom: 2px solid #e26348;
 }
 
-/** 메인 */
-/** 기간 행사 */
+/* 메인 */
+/* 기간 행사 */
 .period-event-container,
 .period-event-container a {
   background-color: #fff;
@@ -95,7 +104,7 @@ header {
 .right-arrow {
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
-  top: 40%;
+  top: 55%;
   position: absolute;
   width: 32px;
   height: 56px;
@@ -129,7 +138,7 @@ header {
   flex-flow: column nowrap;
   justify-content: center;
   position: absolute;
-  top: 30%;
+  top: 45%;
   left: 10%;
   color: white;
 }
@@ -150,7 +159,7 @@ header {
   color: rgba(255, 255, 255, 0.4);
 }
 
-/** 메인 카테고리 메뉴 */
+/* 메인 카테고리 메뉴 */
 .main-category-menu,
 .main-category-menu-list,
 .main-category-menu-list a > img,
@@ -182,4 +191,173 @@ header {
 
 .main-category-menu-list span {
   margin-top: 5px;
+}
+
+/* 런칭 특가 */
+.launching-container {
+  padding: 15px;
+  position: relative;
+}
+
+.launching-container ul {
+  display: flex;
+  overflow: auto;
+}
+
+.launching-container li {
+  margin-right: 12px;
+}
+
+.launching-menu-img {
+  width: 452px;
+  height: 452px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.launching-menu-deco1,
+.launching-menu-deco2,
+.launching-menu-price {
+  color: #61605f;
+  display: block;
+}
+
+.launching-menu-deco1 {
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+.launching-menu-deco2 {
+  font-size: 13px;
+  padding-bottom: 3px;
+}
+
+.launching-menu-price {
+  font-size: 12px;
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.launching-menu-DP {
+  font-weight: 700;
+}
+
+.launching-menu-discount {
+  color: #fb5a36;
+}
+
+.all-view {
+  position: absolute;
+  top: 33px;
+  right: 0;
+  padding-right: 15px;
+  color: #61605f;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.all-view span {
+  font-size: 12px;
+}
+
+/* 산타 선물 리스트 */
+.present-container {
+  margin: 0 15px;
+}
+
+.present-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 15px;
+  margin-top: 15px;
+}
+
+.present-list li {
+  width: 224px;
+  position: relative;
+}
+
+.present-list-review {
+  font-size: 12px;
+  color: #919191;
+}
+
+.present-menu-img {
+  width: 224px;
+  height: 224px;
+  border-radius: 5px;
+}
+
+.present-menu-text {
+  margin-bottom: 20px;
+}
+
+.present-menu-text span {
+  display: block;
+}
+
+.present-menu-name {
+  font-size: 12px;
+  color: #61605f;
+}
+
+.present-menu-price {
+  font-size: 14px;
+  color: #61605f;
+  font-weight: 700;
+}
+
+.present-cart {
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+  border-radius: 100%;
+  padding: 5px;
+  right: 8px;
+  bottom: 68px;
+}
+
+/* 네비게이션 바 */
+.navigation-menu-container {
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 500px;
+  z-index: 999;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #e9e9e9;
+}
+
+.navigation-menu a {
+  text-decoration: none;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.nav-btn:hover,
+.nav-btn a:focus {
+  color: #ff7252;
+}
+
+.navigation-menu img {
+  width: 25px;
+  padding: 10px 0 5px;
+}
+
+.navigation-menu span {
+  font-size: 10px;
+  font-weight: 500;
+  color: #212121;
+  padding: 0 0 15px 0;
+}
+
+.navigation-menu a.is-select span {
+  color: #ff7252;
 }
